@@ -80,6 +80,7 @@ This project eliminates manual report processing by implementing an automated ET
 ### 📸 9. Screenshots (Recommended)
 
 **Folder query view**
+<br>
 ![Pic A](output/1 data folder.png)
 
 Power Query steps
