@@ -81,9 +81,12 @@ This project eliminates manual report processing by implementing an automated ET
 
 **Folder query view**
 <br>
-![Data Folder](outputs/1_data_folder.png) <br>
-![Parameter Setup](outputs/2_Parameter_setup.png) <br>
-![File Inventory](outputs/3_output_Files_Inventory.png) <br>
+![Data Folder](outputs/1_data_folder.png) 
+<br>
+![Parameter Setup](outputs/2_Parameter_setup.png) 
+<br>
+![File Inventory](outputs/3_output_Files_Inventory.png) 
+<br>
 
 **Final transformed tables**
 ![Output Customer Account Summary Report](outputs/4_Customer_Account_Summary_Report.png) <br>
