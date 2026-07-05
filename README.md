@@ -30,53 +30,57 @@ Structured Excel Tables
 
 The pipeline processes the following simulated banking reports:
 
-  (1) Customer Loan Portfolio Report <br>
-  (2) Loan Repayment Due Report <br>
-  (3) Delinquent Loan Report <br>
-  (4) Mortgage Portfolio Report <br>
-  (5) Loan Disbursement Report <br>
-  (6) Customer Account Summary Report <br>
-  (7) Daily Loan Transaction Report <br>
-<br>  
+   - Customer Loan Portfolio Report <br>
+   - Loan Repayment Due Report <br>
+   - Delinquent Loan Report <br>
+   - Mortgage Portfolio Report <br>
+   - Loan Disbursement Report <br>
+   - Customer Account Summary Report <br>
+   - Daily Loan Transaction Report <br>
+ 
 ### ⚙️ 4. Key Features
-Folder-based dynamic file ingestion using Power Query
-Parameterized file path for flexible daily data switching
-Automated parsing of semi-structured TXT reports
-Standardization of:
-Dates
-Numeric values
-Column naming conventions
-Separation of metadata (headers/footers) from transactional data
-Fully refreshable ETL pipeline (single-click refresh)
-🔄 Workflow
-New daily reports are downloaded into a folder
-Folder path is set via a Power Query parameter
-Excel “Refresh All” triggers ingestion and transformation
-All datasets update automatically
-📊 Output
+  - Folder-based dynamic file ingestion using Power Query
+  - Parameterized file path for flexible daily data switching
+  - Automated parsing of semi-structured TXT reports
+  - Rule-based classification approach to seperate data body from header and footer
+
+  - Standardization of: <br>
+    - Dates: eg, from 28-Jun-2026 to 01/06/2026
+    - Numeric values: from text to whole number and/or decimal number
+    - Column naming conventions
+    - Separation of metadata (headers/footers) from transactional data: dynamically identify rows starting with characters of interest 
+    - Fully refreshable ETL pipeline (single-click refresh): parameter setup
+    
+### 🔄 5. Workflow
+  - New daily reports are downloaded into a folder
+  - Folder path is set via a Power Query parameter
+  - Excel “Refresh All” triggers ingestion and transformation
+  - All datasets update automatically
+    
+### 📊 6. Output
 
 Clean, structured Excel tables ready for:
-
-PivotTables
-Dashboards
-Financial reporting
-Power BI integration
-Data analysis
-🛠️ Tools Used
-Microsoft Excel
-Power Query (M Language)
-ETL Design Principles
-Data Cleaning & Transformation
-Folder-based Data Ingestion
-🚀 Key Achievement
+  - PivotTables
+  - Dashboards
+  - Financial reporting
+  - Power BI integration
+  - Data analysis
+    
+### 🛠️ 7. Tools Used
+  - Microsoft Excel
+  - Power Query (M Language)
+  - ETL Design Principles
+  - Data Cleaning & Transformation
+  - Folder-based Data Ingestion
+    
+### 🚀 8. Key Achievement
 
 This project eliminates manual report processing by implementing an automated ETL workflow. The system enables scalable ingestion of multiple banking-style reports with minimal user intervention.
 
 📸 Screenshots (Recommended)
 
-Add images like:
+**Folder query view**
 
-Folder query view
 Power Query steps
 Final transformed tables
 Refresh output
