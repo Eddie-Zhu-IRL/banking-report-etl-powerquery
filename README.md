@@ -15,17 +15,13 @@ All the seven txt-based datasets in this project are synthetically generated ban
 
 ### 🏗️ 2. Architecture
 
-Raw TXT Files (Folder)
-
+Raw TXT Files (Folder) 
         ↓       
-Power Query Folder Connector
-
+Power Query Folder Connector 
         ↓        
-File Inventory Table (Metadata Layer)
-
+File Inventory Table (Metadata Layer) 
         ↓        
-Report-Specific Transformations
-
+Report-Specific Transformations 
         ↓        
 Structured Excel Tables
 
