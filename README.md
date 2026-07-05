@@ -114,11 +114,10 @@ This project eliminates manual report processing by implementing an automated ET
 **File Inventory Post Refreshing**
 ![File Inventory Post Refreshing](outputs/11_Files_Inventory_Post_Refreshing.png)
 
+### 10. Power Query steps
+![Power Queries Steps](outputs/12_Power_Queries_Steps.png)
 
-Power Query steps
-
-Refresh output
 👨‍💻 Author
 
-Your Name
-Data Analyst / Aspiring Data Engineer
+**Eddie Zhu** <br>
+Data Analyst / Aspiring Actuary
