@@ -9,11 +9,11 @@ This project is a Power Query-based ETL pipeline designed to simulate a real-wor
 
 The solution demonstrates how Excel can be used as a lightweight data engineering tool for batch report processing.
 
-##⚠️ Data Disclaimer##
+**⚠️ Data Disclaimer**
 
 All the seven txt-based datasets in this project are synthetically generated banking-style reports used for testing and educational purposes. No real financial or customer data is included.
 
-🏗️ Architecture
+### 🏗️ Architecture
 Raw TXT Files (Folder)
         ↓
 Power Query Folder Connector
@@ -23,7 +23,8 @@ File Inventory Table (Metadata Layer)
 Report-Specific Transformations
         ↓
 Structured Excel Tables
-📁 Input Data
+
+###📁 **Input Data**
 
 The pipeline processes the following simulated banking reports:
 
