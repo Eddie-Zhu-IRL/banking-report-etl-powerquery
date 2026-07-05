@@ -14,23 +14,17 @@ The solution demonstrates how Excel can be used as a lightweight data engineerin
 All the seven txt-based datasets in this project are synthetically generated banking-style reports used for testing and educational purposes. No real financial or customer data is included.
 
 ### 🏗️ 2. Architecture
+
 Raw TXT Files (Folder)
-
-        ↓
-        
+        ↓       
 Power Query Folder Connector
-
-        ↓
-        
+        ↓        
 File Inventory Table (Metadata Layer)
-
-        ↓
-        
+        ↓        
 Report-Specific Transformations
-
-        ↓
-        
+        ↓        
 Structured Excel Tables
+
 
 ### 📁 3. Input Data
 
