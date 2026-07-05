@@ -77,7 +77,7 @@ Clean, structured Excel tables ready for:
 
 This project eliminates manual report processing by implementing an automated ETL workflow. The system enables scalable ingestion of multiple banking-style reports with minimal user intervention.
 
-### 📸 9. Screenshots (Recommended)
+### 📸 9. Screenshots
 
   - **Data Folder View** <br>
 ![Data Folder](outputs/1_data_folder.png) 
