@@ -24,7 +24,7 @@ Report-Specific Transformations
         ↓
 Structured Excel Tables
 
-###📁 **Input Data**
+### 📁 Input Data
 
 The pipeline processes the following simulated banking reports:
 
