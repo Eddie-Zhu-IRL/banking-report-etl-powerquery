@@ -36,8 +36,8 @@ The pipeline processes the following simulated banking reports:
   (4) Mortgage Portfolio Report
   (5) Loan Disbursement Report
   (6) Customer Account Summary Report
-  (7) Daily Loan Transaction Report
-  
+  (7) Daily Loan Transaction Report 
+<br>  
 ### ⚙️ 4. Key Features
 Folder-based dynamic file ingestion using Power Query
 Parameterized file path for flexible daily data switching
