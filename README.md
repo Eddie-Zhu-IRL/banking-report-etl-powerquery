@@ -30,14 +30,15 @@ Structured Excel Tables
 
 The pipeline processes the following simulated banking reports:
 
-- (1) Customer Loan Portfolio Report
-- (2) Loan Repayment Due Report
-- (3) Delinquent Loan Report
-- (4) Mortgage Portfolio Report
-- (5) Loan Disbursement Report
-- (6) Customer Account Summary Report
-- (7) Daily Loan Transaction Report
-⚙️ Key Features
+  (1) Customer Loan Portfolio Report
+  (2) Loan Repayment Due Report
+  (3) Delinquent Loan Report
+  (4) Mortgage Portfolio Report
+  (5) Loan Disbursement Report
+  (6) Customer Account Summary Report
+  (7) Daily Loan Transaction Report
+  
+### ⚙️ 4. Key Features
 Folder-based dynamic file ingestion using Power Query
 Parameterized file path for flexible daily data switching
 Automated parsing of semi-structured TXT reports
