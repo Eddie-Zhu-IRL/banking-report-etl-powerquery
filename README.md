@@ -81,10 +81,23 @@ This project eliminates manual report processing by implementing an automated ET
 
 **Folder query view**
 <br>
-![Pic A](output/1 data folder.png)
+![Data Folder](outputs/1_data_folder.png) <br>
+![Parameter Setup](outputs/2_Parameter_setup.png) <br>
+![File Inventory](outputs/3_output_Files_Inventory.png) <br>
+
+**Final transformed tables**
+![Output Customer Account Summary Report](outputs/4_Customer_Account_Summary_Report.png) <br>
+![Output: Customer Loan Portfolio Report](outputs/5_Customer_Loan_Portfolio_Report.png) <br>
+![Output: Daily Loan Transaction Report](outputs/6_Daily_Loan_Transaction_Report.png) <br>
+![Output: Delinquent Loan Report](outputs/7_Delinquent_Loan_Report.png) <br>
+![Output: Loan Disbursement Report](outputs/8_Loan_Disbursement_Report.png) <br>
+![Output: Loan Repayment Due Report](outputs/9_Loan_Repayment_Due_Report.png) <br>
+![Output: Mortgage Portfolio Report](outputs/10_Mortgage_Portfolio_Report.png) <br>
+![File Inventory Post Refreshing](outputs/11_Files_Inventory_Post_Refreshing.png) <br>
+
 
 Power Query steps
-Final transformed tables
+
 Refresh output
 👨‍💻 Author
 
