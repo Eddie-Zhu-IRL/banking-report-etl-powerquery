@@ -3,7 +3,7 @@ Excel Power Query ETL pipeline that imports, transforms, and standardizes multip
 
 
 ## 📊 Banking Report ETL Pipeline (Excel Power Query)
-### 📌 **Overview**
+### 📌 1.Overview
 
 This project is a Power Query-based ETL pipeline designed to simulate a real-world banking reporting system. It processes multiple structured txt-based reports, transforms them into clean datasets, and prepares them for analysis in Excel.
 
@@ -13,18 +13,26 @@ The solution demonstrates how Excel can be used as a lightweight data engineerin
 
 All the seven txt-based datasets in this project are synthetically generated banking-style reports used for testing and educational purposes. No real financial or customer data is included.
 
-### 🏗️ Architecture
+### 🏗️ 2. Architecture
 Raw TXT Files (Folder)
+
         ↓
+        
 Power Query Folder Connector
+
         ↓
+        
 File Inventory Table (Metadata Layer)
+
         ↓
+        
 Report-Specific Transformations
+
         ↓
+        
 Structured Excel Tables
 
-### 📁 Input Data
+### 📁 3. Input Data
 
 The pipeline processes the following simulated banking reports:
 
