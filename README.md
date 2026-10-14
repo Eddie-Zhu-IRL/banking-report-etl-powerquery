@@ -17,7 +17,10 @@ I worked in an operational admin team, downloaded seven daily reports from syste
      1. Open the txt-based file in Excel.
      2. Text Import Wizard,
         - step 1: choose Fixed width
-     4. step2
+        - step 2: click to place column break lines at the right character positions
+        - step 3: set the data format of each column
+        - Finish
+     3. Delete the report header and footer by hand. Or re-format and/or calculate columns as required.
 - **Why Power Query**
 
 - **The Solution**
