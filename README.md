@@ -80,7 +80,20 @@ The pipeline processes the following simulated banking reports:
    - Loan Disbursement Report <br>
    - Customer Account Summary Report <br>
    - Daily Loan Transaction Report <br>
- 
+
+| Report Name| Target Rows Indicator| Output Columns| Data Type: Format|
+|---|---|---|---|
+| Customer Loan Portfolio Report| Starts With LN1| Loan_No, Customer_Name, Loan_Type, Balance, Interest, Status| Balance: Decimal Num, Interest: Percentage|
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+
 ### ⚙️ 4. Key Features
   - Folder-based dynamic file ingestion using Power Query
   - Parameterized file path for flexible daily data switching
