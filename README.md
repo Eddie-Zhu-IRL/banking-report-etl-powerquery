@@ -26,10 +26,10 @@ I worked in an operational admin team, downloaded seven daily reports from syste
 The above steps were repeated for seven reports each business day by hand. The break lines and formats have to be set again each time and different staff placed the break lines and formatted columns in various ways, which lacked in consistency.
 
 - **Why Power Query**<br>
-The operations team has no access to SQL, Python or other data processing tools, and uses Excel in administrative level. Built into Excel, Power Query facilitates daily process of data import and manipulation by one parameter change and one click of Refresh All, with no coding needed to run the process.
+The operations team has no access to SQL, Python or other data processing tools, and uses Excel at a basic level. Built into Excel, Power Query makes the daily import a single parameter change and one click of Refresh All, with no coding needed to run the process.
 
 - **The Solution**<br>
-A pipeline by Power Query is created in one Excel workbook with following methods:
+A pipeline by Power Query is created in one Excel workbook with following steps:
      - creates defined parameter **Path** to the folder for current working day, such as ~./14102026
      - reads each report from the day's folder -- 14102026
      - creates Target Rows Indicator for data rows, and drops header rows, footer rows and non-data rows
@@ -56,6 +56,7 @@ E --> F["Trim, Set Types,<br>Rename Columns"];
 F --> G["Load to Excel Sheet"];
 A --> H["Data_Folder:<br>file inventory"];
 ```
+Data_Folder lists the files delivered each day, so each refresh can be checked against what was received.
 
 ### 📁 3. Input Data
 
@@ -135,7 +136,7 @@ Each report is loaded into a clean, structured Excel table. Analysts can use the
     
 ### 🚀 8. Key Achievement
 
-This project replaces manual import routine with one parameter change and one Refresh All . 
+This project replaces the manual import routine with one parameter change and one Refresh All . 
 
 👨‍💻 Author <br>
 **Eddie Zhu** <br>
