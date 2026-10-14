@@ -105,12 +105,12 @@ The pipeline processes the following simulated banking reports. Attributes for e
      
 | Reports Name| Before Import| After Import|
 |---|---|---|
-| Customer Account Summary Report|||
-| Customer Loan Portfolio Report|||
-| Daily Loan Transaction Report|||
-| Delinquent Loan Report|||
-| Loan Disbursement Report|||
-| Loan Repayment Due Report|||
+| Customer Account Summary Report|![](Screenshots/raw_Customer_Account_Summary_Report.png)|![](outputs/4_Customer_Account_Summary_Report.png)|
+| Customer Loan Portfolio Report|![](Screenshots/raw_Customer_Loan_Portfolio_Report.png)|![](outputs/5_Customer_Loan_Portfolio_Report.png)|
+| Daily Loan Transaction Report|![](Screenshots/raw_Daily_Loan_Transaction_Report.png)|![](outputs/6_Daily_Loan_Transaction_Report.png)|
+| Delinquent Loan Report|![](Screenshots/raw_Delinquent_Loan_Report.png)|![](outputs/7_Delinquent_Loan_Report.png)|
+| Loan Disbursement Report|![](Screenshots/raw_Loan_Disbursement_Report.png)|![](outputs/8_Loan_Disbursement_Report.png)|
+| Loan Repayment Due Report|![](Screenshots/raw_Loan_Payment_Due_Report.png)|![](outputs/9_Loan_Payment_Due_Report.png)|
 | Mortgage Portfolio Report|![](Screenshots/raw_Mortgage_Portfolio_Report.png)|![](outputs/10_Mortgage_Portfolio_Report.png)|
 
 
