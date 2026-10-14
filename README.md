@@ -9,7 +9,7 @@ All the seven txt-based datasets in this project are synthetically generated ban
 
 This project is a Power Query-based ETL pipeline designed to simulate a real-world banking reporting system. It processes multiple structured txt-based reports, transforms them into clean Excel tables, and prepares them for further analysis in Excel.
 
-The solution demonstrates how Excel can be used as a lightweight data engineering tool for batch report processing. Key steps ate one parameter change and on Refresh All instead of regular manual Text Import Wizard steps for every report.
+The solution demonstrates how Excel can be used as a lightweight data engineering tool for batch report processing. Key steps are one parameter change and on Refresh All instead of regular manual Text Import Wizard steps for every report.
 
 - **The Problem**
 I worked in an operational admin team, downloaded seven daily reports from system and processed them using Excel for analysis. Each report was prepared in the following way,
@@ -97,7 +97,7 @@ The pipeline processes the following simulated banking reports. Attributes for e
 ### 🔄 5. Workflow
   - New daily reports are downloaded into a folder, eg 14102026
   - Folder path is set via Manage Parameters in Power Query.
-  - In Excel, **Date -> "Refresh All”** to launch data import process
+  - In Excel, **Data -> "Refresh All”** to launch data import process
   - All reports are loaded into Excel sheets automatically.
 
 **5.1 Final Outputs**
@@ -138,7 +138,7 @@ Clean, structured Excel tables ready for:
      - Target Rows Indicator: data rows in team are starting with specific characters, such as LN1, MTG, etc. If the indicator is used in different team or company, it needs to be adjusted.
      - Fixed-width column positions: columns in each report are fixed. When report formats change by the development team, position needs to be in line with the changes.
       
-### 🛠️ 7. Tools Used & Skilled Demonstrated
+### 🛠️ 7. Tools Used & Skills Demonstrated
 
 - **Tools**: Microsoft Excel, Power Query (M Language)
 - **Skills**: Data Cleaning & Transformation, Folder-based Data Ingestion, ETL Design Principles
