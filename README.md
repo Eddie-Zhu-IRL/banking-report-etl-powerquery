@@ -59,8 +59,8 @@ Structured Excel Tables
 
 ```mermaid
 graph TD;
-A{Daily Folder}: B[Data Folder];
-A{Daily Folder}: C[Query per Report];
+A{Daily Folder} --> B[Data Folder];
+A{Daily Folder} --> C[Query per Report];
 
 ```
 
