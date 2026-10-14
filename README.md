@@ -73,26 +73,23 @@ C[Excel&nbsp;Workbook:&nbsp;Query&nbsp;Per&nbsp;Report] --> I[Load&nbsp;to&nbsp;
 
 The pipeline processes the following simulated banking reports:
 
-   - Customer Loan Portfolio Report <br>
-   - Loan Repayment Due Report <br>
-   - Delinquent Loan Report <br>
-   - Mortgage Portfolio Report <br>
-   - Loan Disbursement Report <br>
    - Customer Account Summary Report <br>
+   - Customer Loan Portfolio Report <br>
    - Daily Loan Transaction Report <br>
-
+   - Delinquent Loan Report <br>
+   - Loan Disbursement Report <br>
+   - Loan Repayment Due Report <br>
+   - Mortgage Portfolio Report <br>
+   
 | Report Name| Target Rows Indicator| Output Columns| Data Type: Format|
 |---|---|---|---|
+| Customer Account Summary Report| Starts With 001| Account_No, Account_Type, Currency, Balance, Status| Balance: Decimal Num|
 | Customer Loan Portfolio Report| Starts With LN1| Loan_No, Customer_Name, Loan_Type, Balance, Interest, Status| Balance: Decimal Num, Interest: Percentage|
-|||||
-|||||
-|||||
-|||||
-|||||
-|||||
-|||||
-|||||
-|||||
+| Daily Loan Transaction Report| Starts With TXN5| Txn_ID, Loan_No, Customer_Name, Transaction, Amount| Amount: Decimal Num|
+| Delinquent Loan Report| Starts With LN1| Loan_No, Customer_Name, Loan_Type, Balance, Days_Past_Due, Risk_Grade| Balance: Decimal Num|
+| Loan Disbursement Report| Starts With LN2| Loan_No, Customer_Name, Product, Approved_Amount, Disbursed_Amount, Officer| Approved_Amount: Decimal Num, Disbursed_Amount: Decimal Num|
+| Loan Repayment Due Report| Starts With LN1| Loan_No, Customer_Name, Due_Date, Installment, Days_Due, Status| Due_Date: Date, Installment: Decimal Num, Days_Due: Whole Num|
+| Mortgage Portfolio Report| Starts With MTG| Mortgage_No, Borrower, Property_Value, Loan_Balance, LTV, Status| Property_Value: Decimal Num, Loan_Balance: Decimal Num, LTV: Percentage|
 
 ### ⚙️ 4. Key Features
   - Folder-based dynamic file ingestion using Power Query
