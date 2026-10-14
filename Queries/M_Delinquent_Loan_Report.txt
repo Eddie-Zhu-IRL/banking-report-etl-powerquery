@@ -1,0 +1,12 @@
+let
+    
+    #"Imported CSV" = Csv.Document(File.Contents(#"Path" & "\" & "Delinquent Loan Report.txt"),[Delimiter="#(tab)", Columns=2, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+    #"Target Rows Indicator" = Table.AddColumn(#"Imported CSV", "ind", each if Text.StartsWith([Column1], "LN1") then 1 else 0),
+    #"Filtered Rows" = Table.SelectRows(#"Target Rows Indicator", each ([ind] = 1)),
+    #"Split Column by Positions" = Table.SplitColumn(#"Filtered Rows", "Column1", Splitter.SplitTextByPositions({0, 10, 26, 44, 57, 70, 90}), {"Column1.1", "Column1.2", "Column1.3", "Column1.4", "Column1.5", "Column1.6", "Column1.7"}),
+    #"Trimmed Text" = Table.TransformColumns(#"Split Column by Positions",{{"Column1.1", Text.Trim, type text}, {"Column1.2", Text.Trim, type text}, {"Column1.3", Text.Trim, type text}, {"Column1.4", Text.Trim, type text}, {"Column1.5", Text.Trim, type text}, {"Column1.6", Text.Trim, type text}}),
+    #"Changed Type" = Table.TransformColumnTypes(#"Trimmed Text",{{"Column1.4", type number}, {"Column1.5", Int64.Type}}),
+    #"Renamed Columns" = Table.RenameColumns(#"Changed Type",{{"Column1.1", "Loan_No"}, {"Column1.2", "Customer_Name"}, {"Column1.3", "Loan_Type"}, {"Column1.6", "Risk_Grade"}, {"Column1.5", "Days_Past_Due"}, {"Column1.4", "Balance"}}),
+    #"Removed Columns" = Table.RemoveColumns(#"Renamed Columns",{"Column1.7", "Column2", "ind"})
+in
+    #"Removed Columns"
