@@ -46,26 +46,9 @@ Comparison between Manual Steps and Power Query is listed in the following table
   
 ### 🏗️ 2. Architecture
 
-Raw TXT Files (Folder) <br>
-        ↓       
-Power Query Folder Connector <br>
-        ↓        
-File Inventory Table (Metadata Layer) <br>
-        ↓        
-Report-Specific Transformations <br>
-        ↓        
-Structured Excel Tables
-
 ```mermaid
-graph LR;
-A[Daily&nbsp;Folder:&nbsp;Path] --> B[TXT Reports];
-A[Daily&nbsp;Folder:&nbsp;Path] --> C[Excel&nbsp;Workbook:&nbsp;Query&nbsp;Per&nbsp;Report];
-C[Excel&nbsp;Workbook:&nbsp;Query&nbsp;Per&nbsp;Report] --> D[Read TXT];
-C[Excel&nbsp;Workbook:&nbsp;Query&nbsp;Per&nbsp;Report] --> E[Target&nbsp;Data&nbsp;Rows];
-C[Excel&nbsp;Workbook:&nbsp;Query&nbsp;Per&nbsp;Report] --> F[Keep&nbsp;Data&nbsp;Rows];
-C[Excel&nbsp;Workbook:&nbsp;Query&nbsp;Per&nbsp;Report] --> G[Split Column];
-C[Excel&nbsp;Workbook:&nbsp;Query&nbsp;Per&nbsp;Report] --> H[Trim,&nbsp;Format,&nbsp;Rename];
-C[Excel&nbsp;Workbook:&nbsp;Query&nbsp;Per&nbsp;Report] --> I[Load&nbsp;to&nbsp;Excel&nbsp;Sheet]
+flowchart LR;
+A["Path Parameter<br>(the day's folder)"] --> B["Read Report .txt<br>by file name"];
 ```
 
 ### 📁 3. Input Data
