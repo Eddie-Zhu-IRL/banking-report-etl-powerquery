@@ -122,8 +122,8 @@ Each report is loaded into a clean, structured Excel table. Analysts can use the
   - Further data analysis in combination with data from other sources
 
 - **Limitations**<br>
-     - Target Rows Indicator: data rows in team are starting with specific characters, such as LN1, MTG, etc. If the indicator is used in different team or company, it needs to be adjusted.
-     - Fixed-width column positions: columns in each report are fixed. When report formats change by the development team, position needs to be in line with the changes.
+  - Target Rows Indicator: data rows in team are starting with specific characters, such as LN1, MTG, etc. If the indicator is used in different team or company, it needs to be adjusted.
+  - Fixed-width column positions: columns in each report are fixed. When report formats change by the development team, position needs to be in line with the changes.
       
 ### 🛠️ 7. Tools Used & Skills Demonstrated
 
