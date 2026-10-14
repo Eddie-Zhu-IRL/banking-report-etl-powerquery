@@ -25,6 +25,8 @@ I worked in an operational admin team, downloaded seven daily reports from syste
 ![](Screenshots/Manual_Steps.png)
 
 - **Why Power Query**
+ 
+
 
 - **The Solution**
   
