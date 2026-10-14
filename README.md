@@ -59,8 +59,8 @@ Structured Excel Tables
 
 ```mermaid
 graph LR;
-A[Daily Folder:&nbsp; Path] --> B[TXT Reports];
-A[Daily Folder:&nbsp; Path] --> C[Excel Workbook];
+A[Daily Folder:&nbsp;Path] --> B[TXT Reports];
+A[Daily Folder:&nbsp;Path] --> C[Excel Workbook];
 C[Excel Workbook] --> D[Read TXT];
 C[Excel Workbook] --> E[Classify Data Rows];
 C[Excel Workbook] --> F[Keep Data Rows];
