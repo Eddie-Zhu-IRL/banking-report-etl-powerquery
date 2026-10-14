@@ -100,7 +100,7 @@ The pipeline processes the following simulated banking reports. Attributes for e
   - In Excel, **Date -> "Refresh All”** to launch data import process
   - All reports are loaded into Excel sheets automatically.
 
-5.1 Final Outputs
+**5.1 Final Outputs**
      
 | Reports Name| Before Import| After Import|
 |---|---|---|
@@ -112,7 +112,7 @@ The pipeline processes the following simulated banking reports. Attributes for e
 | Loan Repayment Due Report|![](Screenshots/raw_Loan_Repayment_Due_Report.png)|![](outputs/9_Loan_Repayment_Due_Report.png)|
 | Mortgage Portfolio Report|![](Screenshots/raw_Mortgage_Portfolio_Report.png)|![](outputs/10_Mortgage_Portfolio_Report.png)|
 
-5.2 Key Screenshots
+**5.2 Key Screenshots**
 
 | Data Folder| Parameter Setup| Power Query Steps|
 |----|----|----|
@@ -126,7 +126,7 @@ The pipeline processes the following simulated banking reports. Attributes for e
 
 ### 📊 6. Insights and Limitations
 
-- **Insights**
+- **Insights**<br>
 Clean, structured Excel tables ready for:
   - PivotTables
   - Dashboards
