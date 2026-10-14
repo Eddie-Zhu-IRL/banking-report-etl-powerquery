@@ -13,7 +13,9 @@ The solution demonstrates how Excel can be used as a lightweight data engineerin
 All the seven txt-based datasets in this project are synthetically generated banking-style reports used for testing purposes. They simulate similar format of reports data as I worked with. No real financial or customer data is included.
 
 - **The Problem**
-
+I worked in an operational admin team, downloaded seven daily reports from system and processed them using Excel for analysis. Each report was prepared in the following way,
+    - 1. Open the txt-based file in Excel.
+      2. Text 
 - **Why Power Query**
 
 - **The Solution**
