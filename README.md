@@ -70,8 +70,7 @@ The pipeline processes the following simulated banking reports. Attributes for e
 | Loan Repayment Due Report| Starts With LN1| Loan_No, Customer_Name, Due_Date, Installment, Days_Due, Status| Due_Date: Date, Installment: Decimal Num, Days_Due: Whole Num|
 | Mortgage Portfolio Report| Starts With MTG| Mortgage_No, Borrower, Property_Value, Loan_Balance, LTV, Status| Property_Value: Decimal Num, Loan_Balance: Decimal Num, LTV: Percentage|
 
-### ⚙️ 4. Key Features
-  - **Dynamic File Connection**: connection is built on working folder using Power Query, txt. reports will be imported automatically once running Power Query
+### ⚙️ 4. Key Features<br>
   - **Parameterized Folder**: each query reads txt report in folder from the same pre-defined **Path** parameter, so switching to a new day's working folder is one edit. 
   - **Rule-based Rows Identification**: each row is flagged by a Target Rows Indicator if row starts with a series of specific characters. Data will then be filtered based on this indicator. Team only needs data rows, so headers rows, footer rows and other irrelevant rows will be filtered out.
   - **Fixed-width Columns Processing**: Splitter.SplitTextByPositions separates single column into multiple columns based on positions, which performs same steps as column break lines does in Text Wizard.
@@ -112,15 +111,15 @@ The pipeline processes the following simulated banking reports. Attributes for e
 |![](outputs/3_output_Files_Inventory.png)|![](outputs/11_Files_Inventory_Post_Refreshing.png)|
 
 
-### 📊 6. Insights and Limitations
+### 📊 6. Outputs and Limitations
 
-- **Insights**<br>
-Clean, structured Excel tables ready for:
+- **Outputs**<br>
+Each report is loaded into a clean, structured Excel table. Analysts can use these tables for:
   - PivotTables
   - Dashboards
   - Financial reporting
-  - Power BI integration
-  - Data analysis
+  - Power BI
+  - Further data analysis in combination with data from other sources
 
 - **Limitations**<br>
      - Target Rows Indicator: data rows in team are starting with specific characters, such as LN1, MTG, etc. If the indicator is used in different team or company, it needs to be adjusted.
@@ -133,8 +132,7 @@ Clean, structured Excel tables ready for:
     
 ### 🚀 8. Key Achievement
 
-This project eliminates manual report processing by implementing an automated ETL workflow. The system enables scalable ingestion of multiple banking-style reports with minimal user intervention.
-
+This project eliminates manual report processing by implementing an automated ETL workflow. 
 
 👨‍💻 Author <br>
 **Eddie Zhu** <br>
