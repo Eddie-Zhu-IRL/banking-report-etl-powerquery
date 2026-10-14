@@ -86,22 +86,33 @@ The pipeline processes the following simulated banking reports. Attributes for e
 ### ⚙️ 4. Key Features
   - **Dynamic File Connection**: connection is built on working folder using Power Query, txt. reports will be imported automatically once running Power Query
   - **Parameterized Folder**: each query reads txt report in folder from the same pre-defined **Path** parameter, so switching to a new day's working folder is one edit. 
-  - Automated parsing of semi-structured TXT reports
-  - Rule-based classification approach to seperate data body from header and footer
-
-  - Standardization of: <br>
-    - Dates: eg, from 28-Jun-2026 to 01/06/2026
+  - **Rule-based Rows Identification**: each row is flagged by a Target Rows Indicator if row starts with a series of specific characters. Data will then be filtered based on this indicator. Team only needs data rows, so headers rows, footer rows and other irrelevant rows will be filtered out.
+  - **Fixed-width Columns Processing**: Splitter.SplitTextByPositions separates single column into multiple columns based on positions, which performs same steps as column break lines does in Text Wizard.
+  - **Standardization**: this includes text trimming, numeric formatting, date transforming, etc, for consistency when reports are processed by other staff.
+    - Dates: eg, from 28-Jun-2026 to 01/06/2026 for future data aggregation
     - Numeric values: from text to whole number and/or decimal number
     - Column naming conventions
     - Separation of metadata (headers/footers) from transactional data: dynamically identify rows starting with characters of interest 
-    - Fully refreshable ETL pipeline (single-click refresh): parameter setup
+    - Refresh All to complete data import by updating parameter **Path**
     
 ### 🔄 5. Workflow
-  - New daily reports are downloaded into a folder
-  - Folder path is set via a Power Query parameter
-  - Excel “Refresh All” triggers ingestion and transformation
-  - All datasets update automatically
-    
+  - New daily reports are downloaded into a folder, eg 14102026
+  - Folder path is set via Manage Parameters in Power Query.
+  - In Excel, **Date -> "Refresh All”** to launch data import process
+  - All reports are loaded into Excel sheets automatically.
+
+     - 5.1 Final Outputs
+| Reports Name| Before Import| After Import|
+|---|---|---|
+| Customer Account Summary Report|||
+| Customer Loan Portfolio Report|||
+| Daily Loan Transaction Report|||
+| Delinquent Loan Report|||
+| Loan Disbursement Report|||
+| Loan Repayment Due Report|||
+| Mortgage Portfolio Report||![](outputs/10_Mortgage_Portfolio_Report.png)|
+
+
 ### 📊 6. Output
 
 Clean, structured Excel tables ready for:
