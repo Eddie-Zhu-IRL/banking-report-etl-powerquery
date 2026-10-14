@@ -21,6 +21,8 @@ I worked in an operational admin team, downloaded seven daily reports from syste
         - step 3: set the data format of each column
         - Finish
      3. Delete the report header and footer by hand. Or re-format and/or calculate columns as required.
+!(Screenshots/Manual_Steps.png)
+
 - **Why Power Query**
 
 - **The Solution**
