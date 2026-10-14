@@ -24,11 +24,10 @@ I worked in an operational admin team, downloaded seven daily reports from syste
 
 ![](Screenshots/Manual_Steps.png)
 
-The above steps were repeated for seven reports each business day by hand. The break lines and formats have to be set again each time and different staffs placed the break lines and formatted columns in various ways, which could not maintain consistency.
+The above steps were repeated for seven reports each business day by hand. The break lines and formats have to be set again each time and different staff placed the break lines and formatted columns in various ways, which lacked in consistency.
 
 - **Why Power Query**
- 
-
+The operations team has no access to SQL, Python or other data processing tools, and uses Excel in administrative level. Built into Excel, Power Query facilitates daily process of data import and manipulation by one parameter change and one click of Refresh All, with no coding needed to run the process.
 
 - **The Solution**
   
