@@ -59,8 +59,8 @@ Structured Excel Tables
 
 ```mermaid
 graph LR;
-A[Daily Folder of txt-based reports: **Path**] --> B[Current Working Day Reports];
-A[Daily Folder of txt-based reports: **Path**] --> C[Excel Workbook: Query per Report];
+A[Daily&nbsp; Folder&nbsp; of&nbsp; txt-based&nbsp; reports:&nbsp; **Path**&nbsp;] --> B[Current Working Day Reports];
+A[Daily&nbsp; Folder&nbsp; of&nbsp; txt-based&nbsp; reports:&nbsp; **Path**&nbsp;] --> C[Excel Workbook: Query per Report];
 
 ```
 
