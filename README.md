@@ -62,11 +62,11 @@ graph LR;
 A[Daily&nbsp;Folder:&nbsp;Path] --> B[TXT Reports];
 A[Daily&nbsp;Folder:&nbsp;Path] --> C[Excel Workbook];
 C[Excel Workbook] --> D[Read TXT];
-C[Excel Workbook] --> E[Classify Data Rows];
-C[Excel Workbook] --> F[Keep Data Rows];
+C[Excel Workbook] --> E[Classify&nbsp;Data&nbsp;Rows];
+C[Excel Workbook] --> F[Keep&nbsp;Data&nbsp;Rows];
 C[Excel Workbook] --> G[Split Column];
-C[Excel Workbook] --> H[Trim, Format, Rename];
-C[Excel Workbook] --> I[Load to Excel Sheet]
+C[Excel Workbook] --> H[Trim,&nbsp;Format,&nbsp;Rename];
+C[Excel Workbook] --> I[Load&nbsp;to&nbsp;Excel&nbsp;Sheet]
 ```
 
 ### 📁 3. Input Data
