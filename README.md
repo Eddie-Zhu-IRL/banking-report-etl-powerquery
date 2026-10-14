@@ -1,16 +1,15 @@
 # Banking-Report-ETL-PowerQuery
 Excel Power Query ETL pipeline that imports, transforms, and standardizes multiple simulated banking txt-based daily reports into structured datasets for reporting and further analysis.
 
+**⚠️ Data Disclaimer** <br>
+All the seven txt-based datasets in this project are synthetically generated banking-style reports used for testing purposes. They simulate similar format of reports data as I worked with. No real financial or customer data is included.
+
 ## 📊 Banking Report ETL Pipeline (Excel Power Query)
 ### 📌 1. Overview
 
 This project is a Power Query-based ETL pipeline designed to simulate a real-world banking reporting system. It processes multiple structured txt-based reports, transforms them into clean Excel tables, and prepares them for further analysis in Excel.
 
 The solution demonstrates how Excel can be used as a lightweight data engineering tool for batch report processing. Key steps ate one parameter change and on Refresh All instead of regular manual Text Import Wizard steps for every report.
-
-**⚠️ Data Disclaimer**
-
-All the seven txt-based datasets in this project are synthetically generated banking-style reports used for testing purposes. They simulate similar format of reports data as I worked with. No real financial or customer data is included.
 
 - **The Problem**
 I worked in an operational admin team, downloaded seven daily reports from system and processed them using Excel for analysis. Each report was prepared in the following way,
@@ -66,7 +65,7 @@ C[Excel&nbsp;Workbook:&nbsp;Query&nbsp;Per&nbsp;Report] --> E[Target&nbsp;Data&n
 C[Excel&nbsp;Workbook:&nbsp;Query&nbsp;Per&nbsp;Report] --> F[Keep&nbsp;Data&nbsp;Rows];
 C[Excel&nbsp;Workbook:&nbsp;Query&nbsp;Per&nbsp;Report] --> G[Split Column];
 C[Excel&nbsp;Workbook:&nbsp;Query&nbsp;Per&nbsp;Report] --> H[Trim,&nbsp;Format,&nbsp;Rename];
-C[Excel&nbsp;Workbook:&nbsp;Query&nbsp;Per&nbsp;Report] --> I[Load&nbsp;to&nbsp;Excel&nbsp;Sheets]
+C[Excel&nbsp;Workbook:&nbsp;Query&nbsp;Per&nbsp;Report] --> I[Load&nbsp;to&nbsp;Excel&nbsp;Sheet]
 ```
 
 ### 📁 3. Input Data
@@ -112,6 +111,12 @@ The pipeline processes the following simulated banking reports. Attributes for e
 | Loan Disbursement Report|![](Screenshots/raw_Loan_Disbursement_Report.png)|![](outputs/8_Loan_Disbursement_Report.png)|
 | Loan Repayment Due Report|![](Screenshots/raw_Loan_Repayment_Due_Report.png)|![](outputs/9_Loan_Repayment_Due_Report.png)|
 | Mortgage Portfolio Report|![](Screenshots/raw_Mortgage_Portfolio_Report.png)|![](outputs/10_Mortgage_Portfolio_Report.png)|
+
+5.2 Key Screenshots
+
+| Data Folder View| File Inventory - Before| File Inventory - New Daily Data|
+|----|----|----|
+|![](outputs/1_data_folder.png)|![](outputs/3_output_Files_Inventory.png)||
 
 
 ### 📊 6. Output
