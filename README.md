@@ -114,7 +114,7 @@ The pipeline processes the following simulated banking reports. Attributes for e
 ### 📊 6. Outputs and Limitations
 
 - **Outputs**<br>
-Each report is loaded into a clean, structured Excel table. Analysts can use these tables for:
+Each report is loaded into a clean, structured Excel table. Analysts can use these tables for:<br>
   - PivotTables
   - Dashboards
   - Financial reporting
