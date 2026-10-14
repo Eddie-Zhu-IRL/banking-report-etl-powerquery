@@ -60,13 +60,13 @@ Structured Excel Tables
 ```mermaid
 graph LR;
 A[Daily&nbsp;Folder:&nbsp;Path] --> B[TXT Reports];
-A[Daily&nbsp;Folder:&nbsp;Path] --> C[Excel Workbook];
-C[Excel Workbook] --> D[Read TXT];
-C[Excel Workbook] --> E[Classify&nbsp;Data&nbsp;Rows];
-C[Excel Workbook] --> F[Keep&nbsp;Data&nbsp;Rows];
-C[Excel Workbook] --> G[Split Column];
-C[Excel Workbook] --> H[Trim,&nbsp;Format,&nbsp;Rename];
-C[Excel Workbook] --> I[Load&nbsp;to&nbsp;Excel&nbsp;Sheet]
+A[Daily&nbsp;Folder:&nbsp;Path] --> C[Excel&nbsp;Workbook:&nbsp;Query&nbsp;Per&nbsp;Report];
+C[Excel&nbsp;Workbook:&nbsp;Query&nbsp;Per&nbsp;Report] --> D[Read TXT];
+C[Excel&nbsp;Workbook:&nbsp;Query&nbsp;Per&nbsp;Report] --> E[Classify&nbsp;Data&nbsp;Rows];
+C[Excel&nbsp;Workbook:&nbsp;Query&nbsp;Per&nbsp;Report] --> F[Keep&nbsp;Data&nbsp;Rows];
+C[Excel&nbsp;Workbook:&nbsp;Query&nbsp;Per&nbsp;Report] --> G[Split Column];
+C[Excel&nbsp;Workbook:&nbsp;Query&nbsp;Per&nbsp;Report] --> H[Trim,&nbsp;Format,&nbsp;Rename];
+C[Excel&nbsp;Workbook:&nbsp;Query&nbsp;Per&nbsp;Report] --> I[Load&nbsp;to&nbsp;Excel&nbsp;Sheet]
 ```
 
 ### 📁 3. Input Data
