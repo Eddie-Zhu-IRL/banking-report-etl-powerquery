@@ -62,25 +62,17 @@ graph LR;
 A[Daily&nbsp;Folder:&nbsp;Path] --> B[TXT Reports];
 A[Daily&nbsp;Folder:&nbsp;Path] --> C[Excel&nbsp;Workbook:&nbsp;Query&nbsp;Per&nbsp;Report];
 C[Excel&nbsp;Workbook:&nbsp;Query&nbsp;Per&nbsp;Report] --> D[Read TXT];
-C[Excel&nbsp;Workbook:&nbsp;Query&nbsp;Per&nbsp;Report] --> E[Classify&nbsp;Data&nbsp;Rows];
+C[Excel&nbsp;Workbook:&nbsp;Query&nbsp;Per&nbsp;Report] --> E[Target&nbsp;Data&nbsp;Rows];
 C[Excel&nbsp;Workbook:&nbsp;Query&nbsp;Per&nbsp;Report] --> F[Keep&nbsp;Data&nbsp;Rows];
 C[Excel&nbsp;Workbook:&nbsp;Query&nbsp;Per&nbsp;Report] --> G[Split Column];
 C[Excel&nbsp;Workbook:&nbsp;Query&nbsp;Per&nbsp;Report] --> H[Trim,&nbsp;Format,&nbsp;Rename];
-C[Excel&nbsp;Workbook:&nbsp;Query&nbsp;Per&nbsp;Report] --> I[Load&nbsp;to&nbsp;Excel&nbsp;Sheet]
+C[Excel&nbsp;Workbook:&nbsp;Query&nbsp;Per&nbsp;Report] --> I[Load&nbsp;to&nbsp;Excel&nbsp;Sheets]
 ```
 
 ### 📁 3. Input Data
 
-The pipeline processes the following simulated banking reports:
+The pipeline processes the following simulated banking reports. Attributes for each report, such as Data Rows, Output Columns and format of Columns are listed below,
 
-   - Customer Account Summary Report <br>
-   - Customer Loan Portfolio Report <br>
-   - Daily Loan Transaction Report <br>
-   - Delinquent Loan Report <br>
-   - Loan Disbursement Report <br>
-   - Loan Repayment Due Report <br>
-   - Mortgage Portfolio Report <br>
-   
 | Report Name| Target Rows Indicator| Output Columns| Data Type: Format|
 |---|---|---|---|
 | Customer Account Summary Report| Starts With 001| Account_No, Account_Type, Currency, Balance, Status| Balance: Decimal Num|
@@ -92,8 +84,8 @@ The pipeline processes the following simulated banking reports:
 | Mortgage Portfolio Report| Starts With MTG| Mortgage_No, Borrower, Property_Value, Loan_Balance, LTV, Status| Property_Value: Decimal Num, Loan_Balance: Decimal Num, LTV: Percentage|
 
 ### ⚙️ 4. Key Features
-  - Folder-based dynamic file ingestion using Power Query
-  - Parameterized file path for flexible daily data switching
+  - **Dynamic File Connection**: connection is built on working folder using Power Query, txt. reports will be imported automatically once running Power Query
+  - **Parameterized Folder**: each query reads txt report in folder from the same pre-defined **Path** parameter, so switching to a new day's working folder is one edit. 
   - Automated parsing of semi-structured TXT reports
   - Rule-based classification approach to seperate data body from header and footer
 
