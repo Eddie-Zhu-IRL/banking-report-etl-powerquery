@@ -9,7 +9,7 @@ All the seven txt-based datasets in this project are synthetically generated ban
 
 This project is a Power Query-based ETL pipeline designed to simulate a real-world banking reporting system. It processes multiple structured txt-based reports, transforms them into clean Excel tables, and prepares them for further analysis in Excel.
 
-The solution demonstrates how Excel can be used as a lightweight data engineering tool for batch report processing. Key steps are one parameter change and on Refresh All instead of regular manual Text Import Wizard steps for every report.
+The solution demonstrates how Excel can be used as a lightweight data engineering tool for batch report processing. Key steps are one parameter change and one Refresh All instead of regular manual Text Import Wizard steps for every report.
 
 - **The Problem**
 I worked in an operational admin team, downloaded seven daily reports from system and processed them using Excel for analysis. Each report was prepared in the following way,
@@ -54,6 +54,7 @@ C --> D["Keep Data Rows<br>(drop headers and footers)"];
 D --> E["Split at fixed<br>Column Positions"];
 E --> F["Trim, Set Types,<br>Rename Columns"];
 F --> G["Load to Excel Sheet"];
+G --> H["Data_Folder:<br>file inventory"];
 ```
 
 ### 📁 3. Input Data
@@ -64,18 +65,18 @@ The pipeline processes the following simulated banking reports. Attributes for e
 |---|---|---|---|
 | Customer Account Summary Report| Starts With 001| Account_No, Account_Type, Currency, Balance, Status| Balance: Decimal Num|
 | Customer Loan Portfolio Report| Starts With LN1| Loan_No, Customer_Name, Loan_Type, Balance, Interest, Status| Balance: Decimal Num, Interest: Percentage|
-| Daily Loan Transaction Report| Starts With TXN5| Txn_ID, Loan_No, Customer_Name, Transaction, Amount| Amount: Decimal Num|
-| Delinquent Loan Report| Starts With LN1| Loan_No, Customer_Name, Loan_Type, Balance, Days_Past_Due, Risk_Grade| Balance: Decimal Num|
+| Daily Loan Transaction Report| Starts With TXN5| Transaction_ID, Loan_No, Customer_Name, Transaction, Amount| Amount: Decimal Num|
+| Delinquent Loan Report| Starts With LN1| Loan_No, Customer_Name, Loan_Type, Balance, Days_Past_Due, Risk_Grade| Balance: Decimal Num, Days_Past_Due: Whole Num|
 | Loan Disbursement Report| Starts With LN2| Loan_No, Customer_Name, Product, Approved_Amount, Disbursed_Amount, Officer| Approved_Amount: Decimal Num, Disbursed_Amount: Decimal Num|
 | Loan Repayment Due Report| Starts With LN1| Loan_No, Customer_Name, Due_Date, Installment, Days_Due, Status| Due_Date: Date, Installment: Decimal Num, Days_Due: Whole Num|
 | Mortgage Portfolio Report| Starts With MTG| Mortgage_No, Borrower, Property_Value, Loan_Balance, LTV, Status| Property_Value: Decimal Num, Loan_Balance: Decimal Num, LTV: Percentage|
 
-### ⚙️ 4. Key Features<br>
+### ⚙️ 4. Key Features
   - **Parameterized Folder**: each query reads txt report in folder from the same pre-defined **Path** parameter, so switching to a new day's working folder is one edit. 
   - **Rule-based Rows Identification**: each row is flagged by a Target Rows Indicator if row starts with a series of specific characters. Data will then be filtered based on this indicator. Team only needs data rows, so headers rows, footer rows and other irrelevant rows will be filtered out.
   - **Fixed-width Columns Processing**: Splitter.SplitTextByPositions separates single column into multiple columns based on positions, which performs same steps as column break lines does in Text Wizard.
   - **Standardization**: this includes text trimming, numeric formatting, date transforming, etc, for consistency when reports are processed by other staff.
-    - Dates: eg, from 28-Jun-2026 to 01/06/2026 for future data aggregation
+    - Dates: Due_Date changed to the start of month (eg. from 28-Jun-2026 to 01/06/2026) for monthly aggregation
     - Numeric values: from text to whole number and/or decimal number
     - Column naming conventions
     - Separation of metadata (headers/footers) from transactional data: dynamically identify rows starting with characters of interest 
@@ -132,7 +133,7 @@ Each report is loaded into a clean, structured Excel table. Analysts can use the
     
 ### 🚀 8. Key Achievement
 
-This project eliminates manual report processing by implementing an automated ETL workflow. 
+This project replaces manual import routine with one parameter change and one Refresh All . 
 
 👨‍💻 Author <br>
 **Eddie Zhu** <br>
