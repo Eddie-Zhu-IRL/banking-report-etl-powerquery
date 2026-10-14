@@ -102,6 +102,7 @@ The pipeline processes the following simulated banking reports. Attributes for e
   - All reports are loaded into Excel sheets automatically.
 
      - 5.1 Final Outputs <br>
+     
 | Reports Name| Before Import| After Import|
 |---|---|---|
 | Customer Account Summary Report|||
