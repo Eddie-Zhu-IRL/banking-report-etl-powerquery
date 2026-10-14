@@ -114,7 +114,12 @@ The pipeline processes the following simulated banking reports. Attributes for e
 
 5.2 Key Screenshots
 
-| Data Folder View| File Inventory - Before| File Inventory - New Data 14/10/2026|
+| Data Folder| Parameter Setup| Power Query Steps|
+|----|----|----|
+|![](outputs/1_data_folder.png)|![](outputs/2_Parameter_setup.png)|![](outputs/12_Power_Queries_Steps.png)|
+
+
+| Data Folder View| File Inventory - Before 05/07/2026| File Inventory - New Data 14/10/2026|
 |----|----|----|
 |![](outputs/1_data_folder.png)|![](outputs/3_output_Files_Inventory.png)|![](outputs/11_Files_Inventory_Post_Refreshing.png)|
 
