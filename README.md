@@ -29,7 +29,13 @@ The above steps were repeated for seven reports each business day by hand. The b
 - **Why Power Query**<br>
 The operations team has no access to SQL, Python or other data processing tools, and uses Excel in administrative level. Built into Excel, Power Query facilitates daily process of data import and manipulation by one parameter change and one click of Refresh All, with no coding needed to run the process.
 
-- **The Solution**
+- **The Solution**<br>
+A pipeline by Power Query is created in one Excel workbook with following methods:
+- creates defined parameter **Path** to the folder for current working day, such as ~./14102026
+- reads each report from the day's folder -- 14102026
+- creates Target Rows Indicator for data rows, and drops header rows, footer rows and non-data rows
+- splits the fixed-width lines of data into columns based on position, trims the text, applies appropriate data types and renames columns
+- loads each report to its own sheet for further analysis
 
 ||Manual Steps (Before)|Power Query (After)|
 |---|---|---|
