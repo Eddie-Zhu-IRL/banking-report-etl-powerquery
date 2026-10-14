@@ -88,7 +88,7 @@ The pipeline processes the following simulated banking reports. Attributes for e
   - In Excel, **Data -> "Refresh All”** to launch data import process
   - All reports are loaded into Excel sheets automatically.
 
-The M code of each query is in the Queries/ folder.
+The M code of each query is in the [Queries](./Queries/) folder.
 
 **5.1 Final Outputs**
      
