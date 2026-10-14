@@ -30,6 +30,13 @@ The above steps were repeated for seven reports each business day by hand. The b
 The operations team has no access to SQL, Python or other data processing tools, and uses Excel in administrative level. Built into Excel, Power Query facilitates daily process of data import and manipulation by one parameter change and one click of Refresh All, with no coding needed to run the process.
 
 - **The Solution**
+
+||Manual Steps (Before)|Power Query (After)|
+|---|---|---|
+| Per Report| Multiple Manual Steps in the wizard| None|
+| Column Position and Types| Set Daily| Defined once in the Query|
+| Header and Footer Removal| Delete by hand| Removed by rules|
+| Daily Action| Repeat for 7 Reports| Change parameter "Path", then Refresh All|
   
 ### 🏗️ 2. Architecture
 
