@@ -24,6 +24,8 @@ I worked in an operational admin team, downloaded seven daily reports from syste
 
 ![](Screenshots/Manual_Steps.png)
 
+The above steps were repeated for seven reports each business day by hand. The break lines and formats have to be set again each time and different staffs placed the break lines and formatted columns in various ways, which could not maintain consistency.
+
 - **Why Power Query**
  
 
