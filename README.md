@@ -101,7 +101,7 @@ The pipeline processes the following simulated banking reports. Attributes for e
   - In Excel, **Date -> "Refresh All”** to launch data import process
   - All reports are loaded into Excel sheets automatically.
 
-     - 5.1 Final Outputs <br>
+5.1 Final Outputs <br>
      
 | Reports Name| Before Import| After Import|
 |---|---|---|
