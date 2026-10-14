@@ -1,0 +1,4 @@
+let
+    Source = Folder.Files(Path)
+in
+    Source
