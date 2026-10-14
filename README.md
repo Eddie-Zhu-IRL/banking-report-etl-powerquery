@@ -116,7 +116,7 @@ The pipeline processes the following simulated banking reports. Attributes for e
 
 | Data Folder| Parameter Setup| Power Query Steps|
 |----|----|----|
-|![](outputs/1_data_folder.png)|![](outputs/2_Parameter_setup.png)|![](outputs/12_Power_Queries_Steps.png)|
+|![](outputs/1_data_folder.png)|![](outputs/12_Power_Queries_Steps.png)|![](outputs/12_Power_Queries_Steps.png)|
 
 
 | Data Folder View| File Inventory - Before 05/07/2026| File Inventory - New Data 14/10/2026|
