@@ -14,8 +14,10 @@ All the seven txt-based datasets in this project are synthetically generated ban
 
 - **The Problem**
 I worked in an operational admin team, downloaded seven daily reports from system and processed them using Excel for analysis. Each report was prepared in the following way,
-    - 1. Open the txt-based file in Excel.
-      2. Text 
+     1. Open the txt-based file in Excel.
+     2. Text Import Wizard,
+        - step 1: choose Fixed width
+     4. step2
 - **Why Power Query**
 
 - **The Solution**
