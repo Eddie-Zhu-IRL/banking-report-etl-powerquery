@@ -59,9 +59,14 @@ Structured Excel Tables
 
 ```mermaid
 graph LR;
-A[Daily&nbsp; Folder&nbsp; of&nbsp; txt-based&nbsp; reports:&nbsp; **Path**&nbsp;] --> B[Current Working Day Reports];
-A[Daily&nbsp; Folder&nbsp; of&nbsp; txt-based&nbsp; reports:&nbsp; **Path**&nbsp;] --> C[Excel Workbook: Query per Report];
-
+A[Daily Folder: Path] --> B[TXT Reports];
+A[Daily Folder: Path] --> C[Excel Workbook];
+C[Excel Workbook] --> D[Read TXT];
+C[Excel Workbook] --> E[Classify Data Rows];
+C[Excel Workbook] --> F[Keep Data Rows];
+C[Excel Workbook] --> G[Split Column];
+C[Excel Workbook] --> H[Trim, Format, Rename];
+C[Excel Workbook] --> I[Load to Excel Sheet]
 ```
 
 ### 📁 3. Input Data
