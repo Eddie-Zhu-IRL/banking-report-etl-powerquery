@@ -50,6 +50,10 @@ Comparison between Manual Steps and Power Query is listed in the following table
 flowchart LR;
 A["Path Parameter<br>(the day's folder)"] --> B["Read Report .txt<br>by file name"];
 B --> C["Flag Data Rows<br>(Target Rows Indicator)"];
+C --> D["Keep Data Rows<br>(drop headers and footers)"];
+D --> E["Split at fixed<br>Column Positions"];
+E --> F["Trim, Set Types,<br>Rename Columns"];
+F --> G["Load to Excel Sheet"];
 ```
 
 ### 📁 3. Input Data
