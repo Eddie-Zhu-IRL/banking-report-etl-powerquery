@@ -49,6 +49,7 @@ Comparison between Manual Steps and Power Query is listed in the following table
 ```mermaid
 flowchart LR;
 A["Path Parameter<br>(the day's folder)"] --> B["Read Report .txt<br>by file name"];
+B --> C["Flag Data Rows<br>(Target Rows Indicator)"];
 ```
 
 ### 📁 3. Input Data
