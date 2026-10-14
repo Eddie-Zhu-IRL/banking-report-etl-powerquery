@@ -54,7 +54,7 @@ C --> D["Keep Data Rows<br>(drop headers and footers)"];
 D --> E["Split at fixed<br>Column Positions"];
 E --> F["Trim, Set Types,<br>Rename Columns"];
 F --> G["Load to Excel Sheet"];
-G --> H["Data_Folder:<br>file inventory"];
+A --> H["Data_Folder:<br>file inventory"];
 ```
 
 ### 📁 3. Input Data
@@ -87,6 +87,8 @@ The pipeline processes the following simulated banking reports. Attributes for e
   - Folder path is set via Manage Parameters in Power Query.
   - In Excel, **Data -> "Refresh All”** to launch data import process
   - All reports are loaded into Excel sheets automatically.
+
+The M code of each query is in the Queries/ folder.
 
 **5.1 Final Outputs**
      
