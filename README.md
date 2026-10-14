@@ -111,7 +111,7 @@ The pipeline processes the following simulated banking reports. Attributes for e
 | Delinquent Loan Report|||
 | Loan Disbursement Report|||
 | Loan Repayment Due Report|||
-| Mortgage Portfolio Report|![](ScreenShots/raw_Mortgage_Portfolio_Report.png)|![](outputs/10_Mortgage_Portfolio_Report.png)|
+| Mortgage Portfolio Report|![](Screenshots/raw_Mortgage_Portfolio_Report.png)|![](outputs/10_Mortgage_Portfolio_Report.png)|
 
 
 ### 📊 6. Output
