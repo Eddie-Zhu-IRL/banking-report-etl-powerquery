@@ -100,7 +100,7 @@ The pipeline processes the following simulated banking reports. Attributes for e
   - In Excel, **Date -> "Refresh All”** to launch data import process
   - All reports are loaded into Excel sheets automatically.
 
-5.1 Final Outputs <br>
+5.1 Final Outputs
      
 | Reports Name| Before Import| After Import|
 |---|---|---|
@@ -124,67 +124,30 @@ The pipeline processes the following simulated banking reports. Attributes for e
 |![](outputs/3_output_Files_Inventory.png)|![](outputs/11_Files_Inventory_Post_Refreshing.png)|
 
 
-### 📊 6. Output
+### 📊 6. Insights and Limitations
 
+- **Insights**
 Clean, structured Excel tables ready for:
   - PivotTables
   - Dashboards
   - Financial reporting
   - Power BI integration
   - Data analysis
-    
-### 🛠️ 7. Tools Used
-  - Microsoft Excel
-  - Power Query (M Language)
-  - ETL Design Principles
-  - Data Cleaning & Transformation
-  - Folder-based Data Ingestion
+
+- **Limitations**<br>
+     - Target Rows Indicator: data rows in team are starting with specific characters, such as LN1, MTG, etc. If the indicator is used in different team or company, it needs to be adjusted.
+     - Fixed-width column positions: columns in each report are fixed. When report formats change by the development team, position needs to be in line with the changes.
+      
+### 🛠️ 7. Tools Used & Skilled Demonstrated
+
+- **Tools**: Microsoft Excel, Power Query (M Language)
+- **Skills**: Data Cleaning & Transformation, Folder-based Data Ingestion, ETL Design Principles
     
 ### 🚀 8. Key Achievement
 
 This project eliminates manual report processing by implementing an automated ETL workflow. The system enables scalable ingestion of multiple banking-style reports with minimal user intervention.
 
-### 📸 9. Screenshots
 
-  - **Data Folder View** <br>
-![Data Folder](outputs/1_data_folder.png) 
-
-  - **Parameter Setup** <br>
-![Parameter Setup](outputs/2_Parameter_setup.png) 
-
-  - **File Inventory** <br>
-![File Inventory](outputs/3_output_Files_Inventory.png) 
-
-
-**Final transformed tables**
-  - Output Customer Account Summary Report <br>
-![Output Customer Account Summary Report](outputs/4_Customer_Account_Summary_Report.png)
-
-  - Output: Customer Loan Portfolio Report <br>
-![Output: Customer Loan Portfolio Report](outputs/5_Customer_Loan_Portfolio_Report.png)
-
-  - Output: Daily Loan Transaction Report <br>
-![Output: Daily Loan Transaction Report](outputs/6_Daily_Loan_Transaction_Report.png)
-
-  - Output: Delinquent Loan Report <br>
-![Output: Delinquent Loan Report](outputs/7_Delinquent_Loan_Report.png)
-
-  - Output: Loan Disbursement Report <br>
-![Output: Loan Disbursement Report](outputs/8_Loan_Disbursement_Report.png)
-
-  - Output: Loan Repayment Due Report <br>
-![Output: Loan Repayment Due Report](outputs/9_Loan_Repayment_Due_Report.png)
-
-  - Output: Mortgage Portfolio Report <br>
-![Output: Mortgage Portfolio Report](outputs/10_Mortgage_Portfolio_Report.png)
-
-**File Inventory Post Refreshing**
-![File Inventory Post Refreshing](outputs/11_Files_Inventory_Post_Refreshing.png)
-
-### 10. Power Query steps
-![Power Queries Steps](outputs/12_Power_Queries_Steps.png)
-
-👨‍💻 Author
-
+👨‍💻 Author <br>
 **Eddie Zhu** <br>
 Data Analyst / Aspiring Actuary
