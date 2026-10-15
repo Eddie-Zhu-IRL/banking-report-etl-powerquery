@@ -29,7 +29,7 @@ The above steps were repeated for seven reports each business day by hand. The b
 The operations team has no access to SQL, Python or other data processing tools, and uses Excel at a basic level. Built into Excel, Power Query makes the daily import a single parameter change and one click of Refresh All, with no coding needed to run the process.
 
 - **The Solution**<br>
-A pipeline by Power Query is created in one Excel workbook with following steps:
+A pipeline by Power Query is created in one Excel workbook with following steps, to show how repetitive manual processing could be made more efficient and consistent with the existing tool constrains:
      - creates defined parameter **Path** to the folder for current working day, such as ~./14102026
      - reads each report from the day's folder -- 14102026
      - creates Target Rows Indicator for data rows, and drops header rows, footer rows and non-data rows
