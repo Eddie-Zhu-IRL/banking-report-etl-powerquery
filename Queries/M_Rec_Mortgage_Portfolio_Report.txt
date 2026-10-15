@@ -1,0 +1,10 @@
+let
+    #"Imported CSV" = Csv.Document(File.Contents(#"Path" & "\Mortgage Portfolio Report.txt"),[Delimiter=":", Columns=2, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+    #"Kept Last Rows" = Table.LastN(#"Imported CSV", 6),
+    #"Removed Blank Rows" = Table.SelectRows(#"Kept Last Rows", each not List.IsEmpty(List.RemoveMatchingItems(Record.FieldValues(_), {"", null}))),
+    #"Removed Bottom Rows" = Table.RemoveLastN(#"Removed Blank Rows",2),
+    #"Transposed Table" = Table.Transpose(#"Removed Bottom Rows"),
+    #"Promoted Headers" = Table.PromoteHeaders(#"Transposed Table", [PromoteAllScalars=true]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Mortgages ", Int64.Type}, {"Portfolio Value ", type number}, {"Generated Date ", type date}})
+in
+    #"Changed Type"
