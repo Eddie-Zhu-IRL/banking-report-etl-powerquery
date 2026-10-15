@@ -136,7 +136,13 @@ Each report is loaded into a clean, structured Excel table. Analysts can use the
     
 ### 🚀 8. Key Achievement
 
-This project replaces the manual import routine with one parameter change and one Refresh All . 
+This project replaces the manual import routine with one parameter change and one Refresh All. 
+
+- Footer Reconciliation: Data can contain discrepancy, such as total balance can be lower or higher than the given. Reconciliation Tab shows the result of data reconciliation process by flagging the occurrence of imported data and downloaded data. Cells will be filled in yellow and font will be in red once discrepancy shows.
+- Measured Before/After Time:
+     - Manual Import: I performed a manual data import process on seven report and it took me around 5min 30sec.
+     - Power Query Import: By changing data folder path and clicking Refreshing All, I spent around 30 sec.
+Note that users can use the [Test Data 13102026](./Test_Data/) to test the tool's performance. Once path is updated to 13102026, by clicking Refreshing All after loading, data will be updated and transformed into desired format for further analysis.
 
 👨‍💻 Author <br>
 **Eddie Zhu** <br>
