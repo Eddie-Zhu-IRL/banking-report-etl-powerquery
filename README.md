@@ -142,7 +142,7 @@ This project replaces the manual import routine with one parameter change and on
 - Measured Before/After Time (one timed run each, seven reports):
      - Manual Import: about 5min 30sec.
      - Power Query Import: about 30sec (change for folder path, then click Refresh All).
-
+![](outputs/Reconciliation.png)
 **Try it**: set the `Path` parameter to the [Test Data 13102026](./Test_Data/) folder and click Refresh All. The test data contains three deliberate discrepancies, so three cells on the Reconciliation sheet will be highlighted,
      - Customer Account Summary Report: Total Loan Blance
      - Customer Loan Portfolio Report: Outstanding Total
